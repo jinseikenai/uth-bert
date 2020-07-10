@@ -9,7 +9,9 @@ https://ai-health.m.u-tokyo.ac.jp/uth-bert
 
 ## Pre-processing text
 
-Japanese text includes two-byte full-width characters (mainly Kanji, Hiragana, or Katakana) and one-byte half-width characters (mainly ASCII characters), the Normalization Form Compatibility Composition (NFKC) followed by full-width characterization to all characters were applied as a pre-processing
+Japanese text includes two-byte full-width characters (mainly Kanji, Hiragana, or Katakana) and one-byte half-width characters (mainly ASCII characters).
+
+We applied the Normalization Form Compatibility Composition (NFKC) followed by full-width characterization to all characters as a pre-processing.
  
 ## Tokenization
 
