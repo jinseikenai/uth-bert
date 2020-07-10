@@ -26,7 +26,7 @@ dicdir = /usr/lib/mecab/dic/mecab-ipadic-neologd<br>
 
 ###  3. Download [J-Medic](http://sociocom.jp/~data/2018-manbyo/index.html) (medical dictionary for Mecab)
 
-You can download MANBYO_201907_Dic-utf8.dic from below URL.<br>
+You can download `MANBYO_201907_Dic-utf8.dic` from below URL.<br>
 http://sociocom.jp/~data/2018-manbyo/index.html<br>
 
 ## Pre-processing text
@@ -45,17 +45,17 @@ See [tokenization_mod.py](https://github.com/jinseikenai/uth-bert/blob/master/to
 
 ### Original text
 
-> 2002 年夏より重い物の持ち上げが困難になり，階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．2005 年 2 月頃より鼻声となりろれつが回りにくくなった．また，食事中にむせるようになり，同年 12 月に当院に精査入院した。
+*** 2002 年夏より重い物の持ち上げが困難になり，階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．2005 年 2 月頃より鼻声となりろれつが回りにくくなった．また，食事中にむせるようになり，同年 12 月に当院に精査入院した。
 
-> (English) Since the summer of 2002, there has been difficulty in lifting heavy objects and muscle weakness in the extremities, such as slow climbing of stairs. In February 2005, the patient's voice became nasal, and he had difficulty in turning his tongue. In December of the same year, he was admitted to our hospital for a thorough examination after becoming lethargic while eating.
+*** (English) Since the summer of 2002, there has been difficulty in lifting heavy objects and muscle weakness in the extremities, such as slow climbing of stairs. In February 2005, the patient's voice became nasal, and he had difficulty in turning his tongue. In December of the same year, he was admitted to our hospital for a thorough examination after becoming lethargic while eating.
 
 ### After pre-processing
 
-> ２００２年夏より重い物の持ち上げが困難になり、階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．２００５年２月頃より鼻声となりろれつが回りにくくなった．また、食事中にむせるようになり、同年１２月に当院に精査入院した。
+*** ２００２年夏より重い物の持ち上げが困難になり、階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．２００５年２月頃より鼻声となりろれつが回りにくくなった．また、食事中にむせるようになり、同年１２月に当院に精査入院した。
 
 ### After tokenization
 
-> ['２００２年', '夏', 'より', '重い', '物', 'の', '持ち上げ', 'が', '困難', 'に', 'なり', '、', '階段', 'の', '[UNK]', 'が', '遅く', 'なる', 'など', '四肢', 'の', '筋力低下', 'が', '緩徐', 'に', '進行', 'し', 'た', '．', '２００５年', '２', '月頃', 'より', '鼻', '##声', 'と', 'なり', 'ろ', '##れ', '##つ', 'が', '回り', '##にく', '##く', 'なっ', 'た', '．', 'また', '、', '食事', '中', 'に', 'むせる', 'よう', 'に', 'なり', '、', '同年', '１２月', 'に', '当', '院', 'に', '精査', '入院', 'し', 'た', '。']
+*** ['２００２年', '夏', 'より', '重い', '物', 'の', '持ち上げ', 'が', '困難', 'に', 'なり', '、', '階段', 'の', '[UNK]', 'が', '遅く', 'なる', 'など', '四肢', 'の', '筋力低下', 'が', '緩徐', 'に', '進行', 'し', 'た', '．', '２００５年', '２', '月頃', 'より', '鼻', '##声', 'と', 'なり', 'ろ', '##れ', '##つ', 'が', '回り', '##にく', '##く', 'なっ', 'た', '．', 'また', '、', '食事', '中', 'に', 'むせる', 'よう', 'に', 'なり', '、', '同年', '１２月', 'に', '当', '院', 'に', '精査', '入院', 'し', 'た', '。']
 
 See [example_main.py](https://github.com/jinseikenai/uth-bert/blob/master/example_main.py) for details<br>
 
