@@ -9,13 +9,13 @@ https://ai-health.m.u-tokyo.ac.jp/uth-bert
 
 ## Quick setup morphological analyzer
 
-# 1. Install Mecab on Ubuntu 
+### 1. Install Mecab on Ubuntu 
 
 sudo apt install mecab
 sudo apt install libmecab-dev
 sudo apt install mecab-ipadic-utf8
 
-# 2. Install mecab-ipadic-neologd (general dictionary for Mecab)
+### 2. Install mecab-ipadic-neologd (general dictionary for Mecab)
 
 git clone https://github.com/neologd/mecab-ipadic-neologd.git
 cd mecab-ipadic-neologd
@@ -24,7 +24,7 @@ sudo bin/install-mecab-ipadic-neologd
 Edit /etc/mecabrc
 dicdir = /usr/lib/mecab/dic/mecab-ipadic-neologd
 
-#  3. Download J-Medic (medical dictionary for Mecab)
+###  3. Download J-Medic (medical dictionary for Mecab)
 
 [MANBYO_201907_Dic-utf8.dic](http://sociocom.jp/~data/2018-manbyo/index.html)
 
