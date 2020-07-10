@@ -11,9 +11,9 @@ https://ai-health.m.u-tokyo.ac.jp/uth-bert<br>
 A clinical specific BERT developed with huge size of Japanese clinical narrative<br>
 https://doi.org/10.1101/2020.07.07.20148585<br>
 
-## 1. Quick setup of [Mecab](https://taku910.github.io/mecab/) (Japanese morphological analyzer)
+## 1. Quick setup
 
-### 1-1. Install Mecab on Ubuntu 
+### 1-1. Install [Mecab](https://taku910.github.io/mecab/) (Japanese morphological analyzer) on Ubuntu 
 
 `sudo apt install mecab`<br>
 `sudo apt install libmecab-dev`<br>
