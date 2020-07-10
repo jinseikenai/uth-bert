@@ -7,7 +7,7 @@ https://github.com/google-research/bert<br>
 2. UTH-BERT
 https://ai-health.m.u-tokyo.ac.jp/uth-bert<br>
 
-## Quick setup of morphological analyzer
+## Quick setup of Mecab (Japanese morphological analyzer)
 
 ### 1. Install Mecab on Ubuntu 
 
@@ -41,6 +41,21 @@ In non-segmented languages such as Japanese or Chinese, a tokenizer must accurat
 
 See [tokenization_mod.py](https://github.com/jinseikenai/uth-bert/blob/master/tokenization_mod.py) for details<br>
 
+## Example
+
+### Original text
+
+> 2002 年夏より重い物の持ち上げが困難になり，階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．2005 年 2 月頃より鼻声となりろれつが回りにくくなった．また，食事中にむせるようになり，同年 12 月に当院に精査入院した。
+
+### After pre-processing
+
+> ２００２年夏より重い物の持ち上げが困難になり、階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．２００５年２月頃より鼻声となりろれつが回りにくくなった．また、食事中にむせるようになり、同年１２月に当院に精査入院した。
+
+### After tokenization
+
+> ['２００２年', '夏', 'より', '重い', '物', 'の', '持ち上げ', 'が', '困難', 'に', 'なり', '、', '階段', 'の', '[UNK]', 'が', '遅く', 'なる', 'など', '四肢', 'の', '筋力低下', 'が', '緩徐', 'に', '進行', 'し', 'た', '．', '２００５年', '２', '月頃', 'より', '鼻', '##声', 'と', 'なり', 'ろ', '##れ', '##つ', 'が', '回り', '##にく', '##く', 'なっ', 'た', '．', 'また', '、', '食事', '中', 'に', 'むせる', 'よう', 'に', 'なり', '、', '同年', '１２月', 'に', '当', '院', 'に', '精査', '入院', 'し', 'た', '。']
+
+See [example_main.py](https://github.com/jinseikenai/uth-bert/blob/master/example_main.py) for details<br>
 
 
 
