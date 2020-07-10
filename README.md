@@ -37,7 +37,10 @@ See [preprocess_text.py](https://github.com/jinseikenai/uth-bert/blob/master/pre
  
 ## Tokenization
 
-In non-segmented languages such as Japanese or Chinese, a tokenizer must accurately identify every word in a sentence before attempt to parse it and to do that requires a method of finding word boundaries without the aid of word delimiters.<br> [tokenization_mod.py](https://github.com/jinseikenai/uth-bert/blob/master/tokenization_mod.py) includes MecabTokenizer and FullTokenizerForMecab that segment a word unit into several pieces of tokens included in BERT vocabulary.
+In non-segmented languages such as Japanese or Chinese, a tokenizer must accurately identify every word in a sentence before attempt to parse it and to do that requires a method of finding word boundaries without the aid of word delimiters. MecabTokenizer and FullTokenizerForMecab that segment a word unit into several pieces of tokens included in BERT vocabulary.
+
+See [tokenization_mod.py](https://github.com/jinseikenai/uth-bert/blob/master/tokenization_mod.py) for details<br>
+
 
 
 
