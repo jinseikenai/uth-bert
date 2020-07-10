@@ -7,7 +7,7 @@ https://github.com/google-research/bert<br>
 2. UTH-BERT
 https://ai-health.m.u-tokyo.ac.jp/uth-bert<br>
 
-## Quick setup of Mecab (Japanese morphological analyzer)
+## Quick setup of [Mecab](https://taku910.github.io/mecab/) (Japanese morphological analyzer)
 
 ### 1. Install Mecab on Ubuntu 
 
