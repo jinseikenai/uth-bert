@@ -47,6 +47,8 @@ See [tokenization_mod.py](https://github.com/jinseikenai/uth-bert/blob/master/to
 
 > 2002 年夏より重い物の持ち上げが困難になり，階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．2005 年 2 月頃より鼻声となりろれつが回りにくくなった．また，食事中にむせるようになり，同年 12 月に当院に精査入院した。
 
+> (English) Since the summer of 2002, there has been difficulty in lifting heavy objects and muscle weakness in the extremities, such as slow climbing of stairs. In February 2005, the patient's voice became nasal, and he had difficulty in turning his tongue. In December of the same year, he was admitted to our hospital for a thorough examination after becoming lethargic while eating.
+
 ### After pre-processing
 
 > ２００２年夏より重い物の持ち上げが困難になり、階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．２００５年２月頃より鼻声となりろれつが回りにくくなった．また、食事中にむせるようになり、同年１２月に当院に精査入院した。
