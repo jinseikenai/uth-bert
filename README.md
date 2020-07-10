@@ -15,7 +15,7 @@ https://ai-health.m.u-tokyo.ac.jp/uth-bert<br>
 `sudo apt install libmecab-dev`<br>
 `sudo apt install mecab-ipadic-utf8`<br>
 
-### 2. Install mecab-ipadic-neologd (general dictionary for Mecab)
+### 2. Install [mecab-ipadic-neologd](https://github.com/neologd/mecab-ipadic-neologd) (general dictionary for Mecab)
 
 `git clone https://github.com/neologd/mecab-ipadic-neologd.git`<br>
 `cd mecab-ipadic-neologd`<br>
@@ -24,10 +24,10 @@ https://ai-health.m.u-tokyo.ac.jp/uth-bert<br>
 #### Edit /etc/mecabrc<br>
 dicdir = /usr/lib/mecab/dic/mecab-ipadic-neologd<br>
 
-###  3. Download J-Medic (medical dictionary for Mecab)
+###  3. Download [J-Medic](http://sociocom.jp/~data/2018-manbyo/index.html) (medical dictionary for Mecab)
 
+You can download MANBYO_201907_Dic-utf8.dic from below URL.<br>
 http://sociocom.jp/~data/2018-manbyo/index.html<br>
-MANBYO_201907_Dic-utf8.dic
 
 ## Pre-processing text
 
