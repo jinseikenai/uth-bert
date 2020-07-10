@@ -21,12 +21,13 @@ git clone https://github.com/neologd/mecab-ipadic-neologd.git<br>
 cd mecab-ipadic-neologd<br>
 sudo bin/install-mecab-ipadic-neologd<br>
 
-Edit /etc/mecabrc<br>
+#### Edit /etc/mecabrc<br>
 dicdir = /usr/lib/mecab/dic/mecab-ipadic-neologd<br>
 
 ###  3. Download J-Medic (medical dictionary for Mecab)
 
-[MANBYO_201907_Dic-utf8.dic](http://sociocom.jp/~data/2018-manbyo/index.html)
+http://sociocom.jp/~data/2018-manbyo/index.html
+MANBYO_201907_Dic-utf8.dic
 
 ## Pre-processing text
 
