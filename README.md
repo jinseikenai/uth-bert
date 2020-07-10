@@ -1,4 +1,4 @@
-# pre-processing text and tokenization for UTH-BERT
+# Pre-processing text and tokenization for UTH-BERT
 This site provides source code for pre-processing text and tokenization for use of UTH-BERT.<br>
 
 1. BERT: Bidirectional Encoder Representations from Transformers.<br>
