@@ -9,7 +9,7 @@ if __name__ == '__main__':
     # path to the mecab-ipadic-neologd
     mecab_ipadic_neologd = '/usr/lib/mecab/dic/mecab-ipadic-neologd'
 
-    # path to the J-Medic (We used MANBYO_201907_Dic-utf8.dic)
+    # path to the J-Medic (We can download 'MANBYO_201907_Dic-utf8.dic' from http://sociocom.jp/~data/2018-manbyo/index.html)
     mecab_J_medic = './MANBYO_201907_Dic-utf8.dic'
 
     # path to the uth-bert vocabulary
@@ -22,8 +22,7 @@ if __name__ == '__main__':
 
     # FullTokenizerForMecab
     tokenizer = tokenization_mod.FullTokenizerForMecab(sub_tokenizer=sub_tokenizer,
-                                                       vocab_file=vocab_file,
-                                                       do_lower_case=False)
+                                                       vocab_file=vocab_file)
 
 
     # pre process and tokenize example
