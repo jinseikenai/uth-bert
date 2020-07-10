@@ -17,7 +17,7 @@ def preprocess(text):
     text = text.replace("，", "、")
     text = (jaconv.h2z(text, kana=True, digit=True, ascii=True))
 
-    # remove zenkaku space
+    # remove full-width space
     text = text.replace("\u3000", "")
 
     return text
