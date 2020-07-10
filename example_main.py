@@ -22,8 +22,8 @@ if __name__ == '__main__':
 
     # FullTokenizerForMecab
     tokenizer = FullTokenizerForMecab(sub_tokenizer=sub_tokenizer,
-                                                       vocab_file=vocab_file,
-                                                       do_lower_case=False)
+                                      vocab_file=vocab_file,
+                                      do_lower_case=False)
 
     # pre process and tokenize example
     original_text = "2002 年夏より重い物の持ち上げが困難になり，階段の昇りが遅くなるなど四肢の筋力低下が緩徐に進行した．2005 年 2 月頃より鼻声となりろれつが回りにくくなった．また，食事中にむせるようになり，同年 12 月に当院に精査入院した。"
