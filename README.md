@@ -23,7 +23,7 @@ https://doi.org/10.1101/2020.07.07.20148585<br>
 
 `git clone https://github.com/neologd/mecab-ipadic-neologd.git`<br>
 `cd mecab-ipadic-neologd`<br>
-`sudo bin/install-mecab-ipadic-neologd`<br>
+`sudo bin/install-mecab-ipadic-neologd -n -a`<br>
 
 #### Edit /etc/mecabrc<br>
 dicdir = /usr/lib/mecab/dic/mecab-ipadic-neologd<br>
