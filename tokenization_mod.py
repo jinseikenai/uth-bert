@@ -399,13 +399,14 @@ def _is_punctuation(char):
 #################################
 class MecabTokenizer(BasicTokenizer):
 
-    def __init__(self, mecab_ipadic_neologd, mecab_J_medic, name_token="＠＠Ｎ"):
+    def __init__(self, mecab_ipadic_neologd, mecab_J_medic, anonymize_person_name=False, name_token="＠＠Ｎ"):
 
         """Constructs a BasicTokenizer.
         """
         import MeCab
 
         self.do_lower_case = False
+        self.anonymize_person_name = anonymize_person_name # This flag should be False unless your text contains a lot of names.
         self.name_token = name_token
         self._mecab = MeCab.Tagger ('-d ' + mecab_ipadic_neologd + ' -u ' + mecab_J_medic)
 
@@ -430,9 +431,8 @@ class MecabTokenizer(BasicTokenizer):
                 pos, pos1 = features[1], features[2]
 
                 if token != '':
-
                     # if word class is a person's name, replace it with a name_token
-                    if pos1 == "人名":
+                    if pos1 == "人名" and self.anonymize_person_name == True:
                         token = self.name_token
                         split_tokens.append(token)
                     else:
